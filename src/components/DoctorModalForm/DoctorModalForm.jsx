@@ -108,6 +108,10 @@ const DoctorModalForm = ({ open, onClose, doctorData }) => {
             <Form.ControlLabel>Должность:</Form.ControlLabel>
             <Form.Control name="post" />
           </Form.Group>
+          <Form.Group>
+            <Form.ControlLabel>Должность (кырг):</Form.ControlLabel>
+            <Form.Control name="postKG" />
+          </Form.Group>
 
           <Form.Group>
             <Form.ControlLabel>Возраст:</Form.ControlLabel>

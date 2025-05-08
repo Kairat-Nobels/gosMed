@@ -1,7 +1,10 @@
 import { Table, Button, Whisper, Tooltip } from 'rsuite';
 import { MdEdit, MdDeleteOutline } from 'react-icons/md';
+import { useSelector } from 'react-redux';
 
 const DoctorsTable = ({ data, onEdit, onDelete }) => {
+  const lang = useSelector(state => state.languageReducer.lang)
+
   return (
     <Table bordered cellBordered data={data} autoHeight wordWrap="break-word">
       <Table.Column width={60} align="center">
@@ -25,7 +28,7 @@ const DoctorsTable = ({ data, onEdit, onDelete }) => {
 
       <Table.Column flexGrow={1}>
         <Table.HeaderCell>Должность</Table.HeaderCell>
-        <Table.Cell dataKey="post" />
+        <Table.Cell dataKey={lang === 'ru' ? "post" : "postKG"} />
       </Table.Column>
 
       <Table.Column flexGrow={1}>
