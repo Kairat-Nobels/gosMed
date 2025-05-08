@@ -1,0 +1,467 @@
+.hello {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    min-height: 550px;
+    height: calc(100vh - 140px);
+    background-image: url('../../assets/images/homemed.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 40%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.right img {
+    width: 100%;
+}
+
+.hello h1 {
+    text-transform: uppercase;
+    font-size: 52px;
+    line-height: 76px;
+}
+
+.hello p {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.left a {
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 24px;
+    color: #ffffff;
+    padding: 12px 20px;
+    background: #175b90e9;
+    border-radius: 10px;
+    transition: .35s;
+}
+
+.left a:hover {
+    transform: scale(1.05);
+    filter: brightness(120%);
+}
+
+.doctors {
+    margin-top: 80px;
+}
+
+.doctors h2 {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.doctors .cardsDoc {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.docLink {
+    width: 320px;
+    margin: 40px auto 10px;
+    background: #175b90e9;
+    border-radius: 20px;
+    transition: .35s;
+}
+
+.docLink a {
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.docLink:hover {
+    transform: scale(1.05);
+    filter: brightness(120%);
+}
+
+.reviewsModal {
+    margin-top: 40px;
+    justify-content: center;
+    gap: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.reviewsModal .docLink {
+    margin: 0;
+}
+
+.reviewsModal button {
+    padding: 14px 30px;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #175b90e9;
+    border-radius: 20px;
+    transition: .35s;
+    outline: none;
+    border: none;
+}
+
+.reviewsModal button:hover {
+    transform: scale(1.05);
+    filter: brightness(120%);
+}
+
+.docLink div {
+    width: 30px;
+}
+
+.docLink div img {
+    width: 100%;
+}
+
+.docLink p {
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+/* about */
+
+.about {
+    margin-top: 100px;
+}
+
+.about h2 {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.aboutText {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutText p {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #0303038d;
+}
+
+
+
+/* feedback */
+.feedBack {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.maps {
+    width: 53%;
+}
+
+.maps iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+.sendMes {
+    width: 45%;
+    padding: 20px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    /* text-align: center; */
+}
+
+.sendMes h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.sendMes p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sendMes form {
+    width: 90%;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sendMes form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.sendMes form label {
+    font-weight: 500;
+}
+
+.sendMes form div input {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border: 2px solid #9c9898;
+    border-radius: 10px;
+}
+
+.sendMes form .message {
+    width: 400px;
+    align-items: start;
+}
+
+.sendMes form div textarea {
+    font-size: 14px;
+    resize: inherit;
+    padding: 10px;
+    border: 2px solid #9c9898;
+    border-radius: 10px;
+    padding: 8px 12px;
+}
+
+.sendMes form input:focus,
+.sendMes form textarea:focus {
+    font-size: 15px;
+    border: 4px solid #175b90e9;
+    background: #f1eded;
+}
+
+.formMes button {
+    background: #175b90e9;
+    color: #ffffff;
+    font-size: 18px;
+    transition: .35s;
+}
+
+.formMes button:hover {
+    transform: scale(1.1);
+    filter: brightness(110%);
+}
+
+.rightH1 {
+    display: none;
+}
+
+.moreBtn {
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width: 1177px) {
+    .hello h1 {
+        font-size: 48px;
+        line-height: 72px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .hello h1 {
+        font-size: 44px;
+        line-height: 66px;
+    }
+
+    .hello p {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .hello p span {
+        font-size: 20px;
+        font-weight: 600;
+        color: #175b90e9;
+    }
+}
+
+@media (max-width: 1100px) {
+    .right {
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .feedBack {
+        margin-top: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .sendMes {
+        width: auto;
+    }
+
+    .sendMes form {
+        width: 100%;
+    }
+
+    .maps {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .doctors .cardsDoc {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 830px) {
+    .right {
+        display: none;
+    }
+
+    .left {
+        width: 90%;
+    }
+
+    .left>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left>div h1 {
+        width: 60%;
+        font-size: 36px;
+    }
+
+    .rightH1 {
+        display: block;
+        width: 50%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .rightH1 img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .left {
+        width: 90%;
+    }
+
+    .reviewsModal {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 630px) {
+    .left {
+        width: 95%;
+    }
+
+    .rightH1 {
+        width: 40%;
+    }
+
+    .aboutP {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 577px) {
+    .rightH1 {
+        display: none;
+    }
+
+    .left>div h1 {
+        width: 100%;
+    }
+
+    .reviewsModal {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 475px) {
+    .doctors h2 {
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .about h2 {
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .sendMes h2 {
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .sendMes form .message {
+        width: 300px;
+    }
+
+    .reviewsModal {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .hello {
+        margin-top: 30px;
+        max-height: 700px;
+    }
+
+
+}
+
+@media (max-width: 362px) {
+    .left div h1 {
+        font-size: 34px;
+    }
+}

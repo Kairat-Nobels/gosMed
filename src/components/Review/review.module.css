@@ -1,0 +1,46 @@
+.imageUser {
+    width: 40px;
+}
+
+.review {
+    width: 100%;
+    /* margin-left: 80px; */
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 220px;
+}
+
+.head {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.head h3 {
+    font-size: 20px;
+}
+
+.review p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.imageUser img {
+    width: 100%;
+}
+
+@media (max-width: 420px) {
+    .review {
+        padding: 15px 10px 15px 20px;
+    }
+
+    .review p {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,63 @@
+.successMessage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.animation {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.animation svg {
+    margin-left: 20px;
+    width: 130px;
+    height: 130px;
+}
+
+.animation path {
+    stroke-dasharray: 99.47578430175781;
+    stroke-dashoffset: -99.47578430175781;
+    fill: transparent;
+}
+
+.animation svg.animate path {
+    animation: draw 3.3s ease forwards;
+    opacity: 1;
+}
+
+@keyframes draw {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: -99.47578430175781;
+        fill: transparent;
+        transform: translateY(0);
+    }
+
+    35% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+
+    60% {
+        fill: #00A574;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        fill: #00A574;
+        stroke-dashoffset: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.successMessage .successText {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: #00A574;
+}

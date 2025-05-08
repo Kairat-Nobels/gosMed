@@ -1,0 +1,155 @@
+.page {
+    padding-bottom: 40px;
+}
+
+.about .image {
+    flex: 0 1 430px;
+    height: 270px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.aboutHead {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about h3 {
+    margin-top: -30px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.aboutHead p {
+    font-weight: 500;
+    width: 55%;
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.flex h4 {
+    font-size: 22px;
+}
+
+.doctors h4 {
+    text-align: center;
+}
+
+.actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.actions button {
+    padding: 14px 30px;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #175b90e9;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.actions button:hover {
+    transform: scale(1.1);
+    filter: brightness(110%);
+}
+
+.backBtn {
+    background: #175b90e9;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    transition: .34s;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+}
+
+.backBtn:hover {
+    transform: scale(1.14);
+    filter: brightness(120%);
+}
+
+@media (max-width: 777px) {
+    .aboutHead p {
+        margin: 0;
+        width: 100%;
+    }
+
+    .about .image {
+        display: none;
+    }
+}
+
+@media (max-width: 610px) {
+    .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .flex h4 {
+        text-align: center;
+    }
+
+    .flex .service {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 470px) {
+    .page h2 {
+        margin-top: 40px;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .about h3 {
+        margin-top: 20px;
+
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .actions {
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .page {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 420px) {
+    .aboutHead p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}

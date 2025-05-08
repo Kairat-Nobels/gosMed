@@ -1,0 +1,22 @@
+.category span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #050505;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.category p {
+    margin-top: 0 !important;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.category p span {
+    margin-right: 10px;
+}

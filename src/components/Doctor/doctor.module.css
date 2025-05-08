@@ -1,0 +1,15 @@
+.div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.div p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #050505;
+    margin-top: 0 !important;
+}

@@ -1,0 +1,32 @@
+.doctors {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex;
+    gap: 35px 20px;
+    width: 90%;
+    margin: 25px auto 0;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.page h2 {
+    margin-top: 40px;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .doctors {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 470px) {
+    .page h2 {
+        margin-top: 40px;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+    }
+}
