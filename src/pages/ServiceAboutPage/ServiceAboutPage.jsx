@@ -29,7 +29,7 @@ function ServiceAboutPage() {
         <div className={styles.page}>
             <button className={styles.backBtn} onClick={() => navigate(-1)}>{t.back}</button>
             <div className={styles.about}>
-                <h3>{service.name}</h3>
+                <h3>{lang === 'ru' ? service.name : service.nameKG}</h3>
                 <div className={styles.aboutHead}>
                     <p>{lang === 'ru' ? service.description : service.descriptionKG}</p>
                     <div className={styles.image}><img src={service.img} alt="img" /></div>
