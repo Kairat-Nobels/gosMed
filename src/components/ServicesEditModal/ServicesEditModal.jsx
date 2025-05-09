@@ -58,6 +58,13 @@ const ServiceEditModal = ({ open, onClose, context, onSubmit }) => {
                   onChange={(val) => handleChange(val, 'post')}
                 />
               </Form.Group>
+              <Form.Group className='serviceModalName'>
+                <Form.ControlLabel>Должность (кырг)</Form.ControlLabel>
+                <Input
+                  value={formData.postKG}
+                  onChange={(val) => handleChange(val, 'postKG')}
+                />
+              </Form.Group>
             </>
           ) : (
             <Form.Group className='serviceModalPrice'>
